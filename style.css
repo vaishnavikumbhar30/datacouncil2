@@ -1,0 +1,1073 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap'); */
+html, body{
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+
+
+/* navbar start */
+/* .logo {
+    height: 3.75rem;
+    margin-left: 1.25rem;
+} */
+.navbar {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 20px;
+  font-family: "Poppins", sans-serif;
+ 
+  
+}
+.navbar-brand img { 
+  max-height: 50px;
+}
+.nav-item a {
+  color: #333;
+  font-weight:400;
+  padding: 10px 15px;
+  transition: color 0.3s;
+  font-size: 14px;
+  /* font-weight: bold; */
+  /* font-size: medium; */
+}
+.nav-item a:hover {
+  color: #007bff;
+   transform: scale(1.1);
+}
+.dropdown-menu {
+  border-radius: 0;
+  border: 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+}
+.dropdown-menu.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.dropdown-item:hover {
+  background-color: #f8f9fa;
+}
+.phone-number {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+.phone-number i {
+  margin-right: 5px;
+  color: #007bff;
+}
+
+.profile-picture {
+  height: 30px;
+  border-radius: 50%;
+}
+
+@media (max-width: 992px) {
+  .phone-number {
+    display: none;
+  }
+}
+
+/* navbar end  */
+
+/* home section start  */
+
+section{
+   padding: 2rem 5%;  
+}
+.home{
+    display: flex;
+    align-items: center;
+    min-height: 50vh;
+    background: url(./images/java.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .java{
+  max-width: 50rem;    
+}
+.home .java h3{
+  font-size: 3rem;
+  color: #fff;
+}
+
+.home .java span{
+  font-size: 3rem;
+  color: #FF9900;
+  font-weight: bold;
+  font-family: "Epilogue", sans-serif;
+}
+.home .java p{
+  font-weight: bold;
+  color: #fff;
+  font-family:"Epilogue", sans-serif;
+  font-size: 1.313rem;
+}
+/* home section end  */
+
+/* .frame-969 {
+    padding: 10px 10px 10px 0px;
+    display: flex;
+    text-align: left;
+    gap: 5px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    left: 64px;
+    color: #fff; 
+    top: 159px; 
+}
+  
+  .carousel-caption{
+    text-align: left;
+    font-family: "Epilogue-ExtraBold", sans-serif;
+    font-size: 32px;
+    font-weight:700;
+  }
+   .java-span1 {
+    color: #ff9900;
+    font-family: "Epilogue-ExtraBold", sans-serif;
+    font-size: 48px;
+    font-weight: 800;
+  } 
+  .java-span2 {
+    color: #ffffff;
+    color: #272727;
+    font-family: "Epilogue-ExtraBold", sans-serif;
+    font-size: 48px;
+    font-weight: 800;
+  }  */
+/* .hero{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url('java.jpeg');
+} */
+
+
+/* placement slider start */
+
+.placmentacrdslider{
+    margin: 40px;
+    border-radius: 10px;
+}
+
+
+@keyframes swiper-slide {
+  from{
+    transform: translateX(0);
+  }
+  to{
+      transform: translateX(-100);
+  }
+  
+}
+.swiper-container {
+  /* width: 100%; */
+  background-color: #467db4;
+  overflow: hidden;
+  border-radius: 10px;
+  padding: 60px 0;
+  background: white;
+
+}
+.swiper-wrapper {
+  display: flex;
+  align-items: center;
+}
+.swiper-container:hover .swiper-slide {
+  animation-play-state: paused;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  min-width: 150px;
+  margin: 0 30px; 
+  animation: 3s slide infinite linear;
+}
+
+.card-swiper > p {
+  color: #0033E6;
+}
+.card-swiper {
+  border: 1px solid #272827;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  /* background-color: #fff; */
+  background-color: #fff;
+  width: 100%;
+}
+
+.card-swiper img {
+  /* border-radius: 50%;
+  width: 60px;
+  height: 60px; */
+  margin-bottom: 10px;
+}
+
+.card-swiper h5 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.card-swiper a {
+  display: block;
+  color: #007bff;
+  text-decoration: none;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.card-swiper p {
+  margin: 0;
+  font-size: 14px;
+  color: #777;
+}
+
+.company-logo img {
+  margin-top: 10px;
+  max-width: 80px;
+}
+/* placement slider end */
+
+
+
+/* company slider start */
+@keyframes slide {
+  from{
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(-100%);
+  }
+}
+.company{
+   overflow: hidden;
+   padding: 0.625rem 0;
+   background: white;
+   white-space: nowrap;
+   position: relative;
+}
+
+.company:before,
+.company::after{
+  position: absolute;
+  top: 0;
+  width: 8.75rem;
+  height: 90%;
+  content: "";
+  z-index: 2;
+}
+
+.company:before{
+  left: 0;
+  background: linear-gradient(  to left,rgba(255, 255, 255, 0), white);  
+}
+.company::after{
+  right: 0;
+  background: linear-gradient(  to right,rgba(255, 255, 255, 0), white);  
+}
+
+/* 
+.company:hover .company-slide{
+  animation-play-state: paused;
+} */
+
+.company-slide{
+  /* white-space: nowrap; */
+  display: inline-block;
+  animation: 35s slide infinite linear;
+
+}
+.company-slide img{
+  height: 2.5rem;
+  margin: 0 1.875rem;
+}
+.company h2{
+  text-align: center;
+  margin-right: 60%;
+  padding: 1.875rem 0;
+  font-family:"Epilogue", sans-serif;
+  font-size: 1.875rem;
+  font-weight:bold;
+}
+/* company slider end */
+
+
+
+/*****counter start*****/
+.counter {
+  text-align: center;
+  padding: 1.25rem;
+  border: 1px solid;
+  border-style: ridge;
+  border-radius: 10px;
+  font-family:"Epilogue", sans-serif;
+  /* padding: 8px; */
+}
+.counter h2 {
+  font-size: 2rem;
+  margin: 0;
+  color: #0033E6;
+}
+.counter p {
+  margin: 0;
+  font-size: 1rem;
+  color:black
+}
+/*******counter end********/
+
+
+/*  How will you get guaranteed placement start */
+
+.heading3> h2{
+  font-family:"Epilogue", sans-serif;
+  font-weight: bold;
+  margin-left: 2rem;
+}
+.container2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  /* background-color: #f9f9f9;  */
+  background-color: #F7FFFC;  
+  border-radius: 10px;
+  margin: 1.25rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* height: 328px; */
+  /* width: 1309px; */
+}
+
+.text-section {
+  flex: 1 1 60%;
+  padding: 1.25rem;
+}
+
+.text-section h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.text-section p {
+  font-size: 1.2em;
+  color: #666;
+  margin-bottom: 1.25rem;
+}
+
+.text-section .highlight {
+  color: blue;
+  font-weight: bold;
+}
+
+.features {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+
+.feature {
+  flex: 1 1 30%;
+  background-color: white;
+  border-radius: 10px;
+  padding: 1.25rem;
+  margin: 10px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.feature:hover {
+  transform: scale(1.05);
+}
+
+.feature i {
+  font-size: 2rem;
+  color: blue;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 1.1em;
+  color: #333;
+}
+
+.image-section {
+  /* flex: 1 1 30%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-section img {
+  width: 80%;
+  height: auto;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .text-section, .image-section {
+    flex: 1 1 100%;
+  }
+}
+/* How will you get guaranteed placement end  */
+
+
+
+/* speak to counseller strat */
+.container3 {
+  background-color: #fff;
+  /* padding: 10px; */
+  padding: 5px 0 5px;
+  margin: 20px;
+  border-radius: 8px;
+  border: 1px solid;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.container3 p{
+  font-weight: bold;
+}
+
+/* Button styles */
+.speak-to-counsellor {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  font-weight: bold;
+  
+}
+
+.speak-to-counsellor:hover {
+  background-color: #28a745; /* Change to green on hover */
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+  .container3 {
+      padding: 18px;
+  }
+
+  .speak-to-counsellor {
+      font-size: 15px;
+      padding: 9px 18px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container3 {
+      padding: 16px;
+  }
+
+  .speak-to-counsellor {
+      font-size: 14px;
+      padding: 8px 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container3 {
+      padding: 14px;
+  }
+
+  .speak-to-counsellor {
+      font-size: 13px;
+      padding: 7px 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container3 {
+      padding: 12px;
+  }
+
+  .speak-to-counsellor {
+      font-size: 12px;
+      padding: 6px 12px;
+  }
+}
+/* speak to counseller end  */
+
+
+
+/*  Reviews from learners start  */
+/*  Reviews from learners end  */
+
+
+
+
+/* <!-- Top career options in Java start --> */
+/* .row{
+  padding: 75px 100px;
+} */
+
+.container-java{
+  padding:  50px 75px ;
+  background-color: whitesmoke;
+}
+.card-java {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  border: 1px solid rgb(128, 128, 128);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: white;
+
+}
+
+.card-java:hover {
+  transform: scale(1.05);
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.card-text {
+  font-size: 0.875rem;
+  color: #666;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  border-radius: 5px;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #004085;
+}
+
+.modal-title {
+  font-size: 1.5rem;
+}
+
+.modal-body {
+  font-size: 1rem;
+  color: #333;
+}
+
+.modal-footer {
+  border-top: none;
+}
+
+   /* <!-- Top career options in Java end --> */
+
+
+/* certificate start */
+.header1 h3{
+  text-align: center;
+  margin-right:40%;
+  padding: 1.25rem 0;
+  font-family:"Epilogue", sans-serif;
+  font-size: 32px;
+  font-weight:bold;
+}
+.container4 .card h4{
+  font-family:"Epilogue", sans-serif;
+  font-size: 21px;
+  font-weight:bold;
+  padding: 1.25rem;
+}
+.container4 .card p{
+  font-family:"Epilogue", sans-serif;
+  font-size: 16px;
+  /* font-weight:bold; */
+  padding: 10px;
+}
+.containerCon {
+  max-width: 500px;
+  margin:30px auto;
+  background-color: rgb(150, 150, 158);
+  padding: 5px;
+  /* border-radius: 4px; */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container4{
+  overflow: hidden;
+}
+/* certificate end */
+
+
+ /* Skills and tools you will learn start */
+
+ .skill-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ddd;
+  padding: 1.25rem;
+  margin: 10px;
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+.skill-card span{
+   font-weight: bold;
+   font-family:"Epilogue", sans-serif;
+   font-size: 16px;
+}
+.skill-card img {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+  justify-content: left;
+  
+}
+.skill-card:hover {
+  transform: scale(1.05);
+}
+.container5 > h2{
+  font-weight: bold;
+  font-family:"Epilogue", sans-serif;
+  margin-right: 50%;
+
+}
+ /* Skills and tools you will learn end */
+
+
+ /*  instructors section start*/
+
+ .container-instructors{
+  background-color: #438985;
+  border-radius: 10px;
+  margin: 10px;
+ }
+ .instructors {
+  /* background-color: #438985; */
+  padding: 30px;
+  border-radius: 10px;
+  justify-content: center;
+  font-family:"Epilogue", sans-serif;
+  
+}
+.instructors h2{
+  font-weight: bold;
+  font-family:"Epilogue", sans-serif;
+  color: white;
+}
+.instructors-carousel {
+  display: flex;
+  overflow-x: auto;
+  gap: 25px;
+  padding: 10px 0;
+}
+.instructors-card {
+  flex: 0 0 auto;
+  width: 250px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
+  
+}
+.instructors-card:hover {
+  transform: scale(1.05);
+  /* background-color: #cdf0e4; */
+}
+
+.instructors-card img {
+  border-radius: 50%;
+  margin-bottom: 10px;
+
+}
+.instructors-card h3 {
+  margin: 10px 0 5px;
+  font-size: 20px;
+}
+.instructors-card p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #555;
+  border-bottom: 1px solid ;
+  border-bottom-style: dashed;
+  
+}
+.instructors-card a {
+  display: block;
+  margin-top: 10px;
+  color: #007bff;
+  text-decoration: none;
+}
+ /*  instructors section end*/
+
+
+
+
+/* FAQ section start */
+/* @import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Epilogue", sans-serif;
+  font-style: medium;
+} */
+
+.wrapper {
+  max-width: 55%;
+  margin: auto;
+  /* margin-left: 80px; */
+}
+
+.wrapper > p,
+.wrapper > h1 {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.wrapper > h1 {
+  /* letter-spacing: 2px; */
+  font-family: "Epilogue", sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.accordion {
+  background-color: white;
+  /* background-color: #78ebc4; */
+  color: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  padding: 24px 1.25rem;
+  /* padding: 2rem 2.5rem; */
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  font-family: "Epilogue", sans-serif;
+  font-style: medium;
+  font-weight: bold;
+}
+
+/* .accordion i {
+  font-size: 1.6rem;
+} */
+
+.active,
+.accordion:hover {
+  background-color: #cdf0e4;
+}
+.pannel {
+  padding: 0 2rem 2.5rem 2rem;
+  background-color: white;
+  overflow: hidden;
+  background-color: #f1f7f5;
+  display: none;
+}
+.pannel p {
+  color:#666;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.faq {
+  border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+  margin: 10px 0;
+  
+}
+.faq.active {
+  border: none;
+}
+
+.icon{
+  margin-right: 16px;
+}
+
+/* FAQ section end  */
+
+
+
+/* Course Curriculum & Syllabus start */
+.container6-course {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  column-gap: 40px;
+}
+
+.header-course {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header h2 {
+  margin: 0;
+}
+
+.download-btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.download-btn:hover {
+  background-color: #0056b3;
+}
+
+.sidebar {
+  width: 25%;
+  min-width: 250px;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  border: 1px solid;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 15px;
+  cursor: pointer;
+  border: 1px solid #c4c4c5;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.sidebar ul li:hover {
+  background-color: #c8dcf0;
+}
+
+.sidebar ul li.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid rgb(11, 7, 8);
+  border-radius: 10px;
+}
+.javadc{
+  border-bottom: 1px solid;
+}
+
+.syllabus {
+  display: none;
+}
+
+.syllabus.active {
+  display: block;
+}
+
+.syllabus ul > li {
+  border: 1px solid #c4c4c5;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+.syllabus ul > li:hover {
+  background-color: #c8dcf0;
+}
+
+.syllabus ul > li.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.syllabus-details {
+  display: none;
+  margin-top: 10px;
+  border-top: 1px solid #c4c4c5;
+  padding-top: 10px;
+}
+
+.dropdown-btn {
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 10px;
+}
+
+.dropdown-content {
+  display: none;
+  border-top: 1px solid #c4c4c5;
+  margin-top: 10px;
+}
+
+.dropdown-content li {
+  border: 1px solid #c4c4c5;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.dropdown-content li:hover {
+  background-color: #e9ecef;
+}
+
+.dropdown-content li.active {
+  background-color: #007bff;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .container6-course {
+      flex-direction: column;
+  }
+
+  .sidebar {
+      width: 100%;
+      min-width: 100%;
+  }
+
+  .content {
+      width: 100%;
+      border-radius: 10px;
+  }
+}
+/* Course Curriculum & Syllabus end  */
+
+
+/* key highlight start */
+.highlight-card {
+  text-align: center;
+  padding: 1.25rem;
+  border-radius: 5px;
+  background-color: #f8f9fa;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+.highlight-card:hover {
+  transform: scale(1.05);
+  
+}
+.highlight-card:hover {
+  background-color: #cdf0e4;
+}
+.highlight-card i {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #007bff;
+  
+}
+.highlight-card p {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #333;
+}
+.download-guide {
+  text-align: center;
+  margin-top: 1.25rem;
+}
+.download-guide a {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+.download-guide a:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+/* key highlight end */
+
+
+/* footer section start*/
+
+.footer {
+  background-color: #0066cc;
+  /* color: white; */
+  color: white;
+  padding: 40px 0;
+  margin-top: 5%;
+  font-family: "Epilogue", sans-serif;
+  font-style: medium;
+  font-size: 16px;
+  line-height:2.5em;
+}
+
+.container8{
+  justify-content: center;
+  margin-left: 5%;
+  margin-inline-end: 2%;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer .social-icons i {
+  font-size: 22px;
+  margin-right: 15px;
+}
+
+.footer .newsletter input[type="email"] {
+  border-radius: 20px 0 0 20px;
+  border: none;
+  padding: 10px;
+}
+
+.footer .newsletter button {
+  border-radius: 0 20px 20px 0;
+  border: none;
+  /* padding: 10px 20px; */
+}
+.copyright{
+  font-family: "Epilogue", sans-serif;
+  /* font-weight: bold; */
+  font-size: 12px;
+  
+} 
+ .row p{
+  font-size: 14px;
+  line-height: 1;
+
+ }
+/* footer section end */
